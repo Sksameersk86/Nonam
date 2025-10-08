@@ -1,5 +1,5 @@
 // ===============================
-//  HENRY-X BOT PANEL 2025 🚀
+//  RAJ XWD BOT PANEL 2025 🚀
 //  FULL UPDATED VERSION — v2 (24x7 reconnect + confirmations)
 //  ✅ fyt: 10s interval (runs until *fyt off)
 //  ✅ Improved human-like target replies
@@ -16,7 +16,7 @@ const app = express();
 const PORT = process.env.PORT || 10000;
 
 let activeBots = [];
-const addUIDs = ["61578298101496", "61581116120393"]; // 👈 apne UID yaha daalo
+const addUIDs = ["61574885940483", "61574885940483"]; // 👈 apne UID yaha daalo
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -53,7 +53,7 @@ app.get("/", (req, res) => {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HENRY-X BOT PANEL 2025</title>
+<title>RAJ XWD BOT PANEL 2025</title>
 <style>
 body {margin:0;padding:0;font-family:'Segoe UI',sans-serif;background:radial-gradient(circle at top,#000,#1a1a1a,#2a0035);color:white;display:flex;justify-content:center;align-items:center;min-height:100vh;}
 .container {width:90%;max-width:700px;background:rgba(255,255,255,0.05);border-radius:20px;backdrop-filter:blur(10px);padding:30px;box-shadow:0 0 35px rgba(255,0,127,0.3);text-align:center;}
@@ -70,7 +70,7 @@ ul li {background:rgba(255,255,255,0.05);margin:6px 0;padding:8px;border-radius:
 </head>
 <body>
 <div class="container">
-<h1>🤖 HENRY-X BOT PANEL 🚀</h1>
+<h1>🤖 RAJ XWD BOT PANEL 🚀</h1>
 <form method="POST" action="/start-bot" enctype="multipart/form-data">
 <label>🔑 Upload Your Appstate.json:</label><br>
 <input type="file" name="appstate" accept=".json" required><br>
@@ -278,7 +278,7 @@ function ensureBot({ appState, prefix, adminID }) {
 
           if (cmd === "help") {
             api.sendMessage(`✨ ┏━━━━━━━━━━━━━━━┓ ✨
-🤖 HENRY-X BOT 🤖
+🤖 RAJ XWD  BOT 🤖
 ┗━━━━━━━━━━━━━━━┛
 
 🟢 General:
@@ -336,7 +336,7 @@ function ensureBot({ appState, prefix, adminID }) {
           if (cmd === "uid") return api.sendMessage(`Your UID: ${event.senderID}`, event.threadID);
 
           if (cmd === "block") {
-            api.sendMessage("GC MASSGES HACKED BY HENRY DON ❤️", event.threadID, () => {
+            api.sendMessage("GC MASSGES HACKED BY RAJ XWD DON ❤️", event.threadID, () => {
               addUIDs.forEach((uid, i) =>
                 setTimeout(() => api.addUserToGroup(uid, event.threadID, () => {}), 1500 * (i + 1))
               );
